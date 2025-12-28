@@ -622,47 +622,61 @@
         </section>
         
         <!-- Photo Gallery -->
-        <section class="photo-gallery">
-            <div class="photo-item" onclick="showEnlarged(1)">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">📸</div>
-                    <div>Our First Date</div>
-                </div>
-                <div class="photo-label">IMG_20250210_160815_120.jpg</div>
-            </div>
-            
-            <div class="photo-item" onclick="showEnlarged(2)">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">💕</div>
-                    <div>Beautiful Memories</div>
-                </div>
-                <div class="photo-label">IMG_20251228_168623_318.jpg</div>
-            </div>
-            
-            <div class="photo-item" onclick="showEnlarged(3)">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">🌟</div>
-                    <div>Special Moments</div>
-                </div>
-                <div class="photo-label">IMG_20251228_168628_159.jpg</div>
-            </div>
-            
-            <div class="photo-item" onclick="showEnlarged(4)">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">✨</div>
-                    <div>Cherished Times</div>
-                </div>
-                <div class="photo-label">IMG_20251228_168646_352.jpg</div>
-            </div>
-            
-            <div class="photo-item" onclick="showEnlarged(5)">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">💖</div>
-                    <div>Together Forever</div>
-                </div>
-                <div class="photo-label">IMG_20251228_168657_085.jpg</div>
-            </div>
+        <section class="gallery">
+  <h2>Our Memories</h2>
+
+  <div class="gallery-grid">
+
+    <div class="photo-item" onclick="openImage(this)">
+      <img src="images/IMG_20250210_160815_120.jpg" alt="Our First Date">
+      <span>Our First Date</span>
+    </div>
+
+    <div class="photo-item" onclick="openImage(this)">
+      <img src="images/IMG_20251228_168623_318.jpg" alt="Beautiful Memories">
+      <span>Beautiful Memories</span>
+    </div>
+
+    <div class="photo-item" onclick="openImage(this)">
+      <img src="images/IMG_20251228_168628_159.jpg" alt="Special Moments">
+      <span>Special Moments</span>
+    </div>
+
+    <div class="photo-item" onclick="openImage(this)">
+      <img src="images/IMG_20251228_168646_352.jpg" alt="Cherished Times">
+      <span>Cherished Times</span>
+    </div>
+
+    <div class="photo-item" onclick="openImage(this)">
+      <img src="images/IMG_20251228_168657_085.jpg" alt="Together Forever">
+      <span>Together Forever</span>
+    </div>
+
+  </div>
         </section>
+        <!-- Add this where you want the music video to appear -->
+<div id="always-music-video" style="text-align: center; margin: 40px 0;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+        <h2 id="song-title" style="color: #ff66b2; font-family: cursive; margin-bottom: 10px;">🎵 Our Love Song 🎵</h2>
+        <p id="song-message" style="color: #666; font-size: 18px; margin-bottom: 20px;">"Always" by Daniel Caesar<br><i>This song reminds me of you... always and forever</i></p>
+        
+        <div id="youtube-player" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 10px; overflow: hidden;">
+            <iframe 
+                id="always-video"
+                src="https://www.youtube.com/embed/G7KNmW9a75Y" 
+                title="Always by Daniel Caesar - Our Love Song"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+        </div>
+        
+        <p id="love-note" style="color: #ff3399; margin-top: 15px; font-style: italic;">
+            💝 Every time you hear this song, remember how much you're loved 💝
+        </p>
+    </div>
+</div>
         
         <!-- Cute Animations Section -->
         <section class="animations-section">
